@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'LexendDeca';
+  src: url('https://fonts.google.com/specimen/Lexend+Deca');
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 800px;
+  height: 500px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  display: flex;
+  border: 1px;
+  border-radius: 20%;
+}
+
+.sedan, .suv,.lux{
+  height: auto;
+  width: 40rem;
+  padding: 45px;
+}
+h1{
+  font-size: 40px;
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: hsl(0, 0%, 95%);
+}
+p{ 
+  font-size: 15px;
+  line-height: 30px;
+  font-family: sans-serif;
+  margin-bottom: 50px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca' ,sans-serif;
+  font-weight: 400;
+}
+/* sua lai thg p vi thg luxury bi sai */
+button{
+  height: 50px;
+  width: 145px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600px;
+  background-color: #FFF;
+  margin: auto;
+  font-family: 'Lexend Deca' ,sans-serif;
+  font-weight: 400;
+}
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+.suv{
+  background-color: hsl(184, 100%, 22%);
+}
+.lux{
+  background-color: hsl(179, 100%, 13%);
+}
+.sedan button{
+  border: none;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(31, 77%, 52%);
+  margin-left: 20px;
+}
+.suv button{
+  border: none;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(184, 100%, 22%);
+  margin-left: 20px;
+}
+.lux button{
+  border: none;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(184, 100%, 22%);
+  margin-left: 20px;
+  margin-top: -20px
+}
+.lux p {
+  margin-bottom: 65px;
+}
+button:active{
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+}
+@media screen and (min-width: 375px) and (max-width: 520px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    width: 380px;
+  }
+  .sedan, .suv, .lux{
+    width: 20rem;
+    height: auto;
+  }
+}
